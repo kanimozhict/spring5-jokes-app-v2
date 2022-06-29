@@ -7,11 +7,11 @@ import services.Jokeservices;
 
 public class JokeControllers {
     private final Jokeservices jokeservices;
-@Autowired
+
     public JokeControllers(Jokeservices jokeservices) {
         this.jokeservices = jokeservices;
     }
-    @RequestMapping({"/ ",""})
+    @RequestMapping({"/ "," "})
     public String showJoke(Model model){
     model.addAttribute("joke",jokeservices.getjoke());
     return "index";
