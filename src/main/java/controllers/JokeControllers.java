@@ -13,7 +13,7 @@ public class JokeControllers {
     }
     @RequestMapping({"/ "," "})
     public String showJoke(Model model){
-    model.addAttribute("joke",jokeservices.getjoke());
+    model.addAttribute("joke",jokeservices.getJoke());
     return "index";
 
     }
